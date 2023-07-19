@@ -46,9 +46,63 @@
 
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:850px) {
+    .container
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:650px) {
     .container
     {
         grid-template-columns: 1fr;
+    }
+}
+
+.outer-container
+{
+    width: 50%;
+    margin: 40px auto 40px;
+
+}
+
+.child-box
+{
+    background-color: black;
+    /* height: 150px; */
+    padding: 6px;
+    position: relative;
+}
+
+.card
+{
+    border: 1px solid white;
+    height: 180px;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#card-btn
+{
+    border: none;
+    outline: none;
+    background-color: yellow;
+    padding: 10px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (max-width:650px) {
+    .outer-container
+    {
+        width: 80%;
     }
 }
